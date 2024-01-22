@@ -336,7 +336,7 @@ export default {
     margin-bottom: 5px;
   }
   .menu-logo {
-    width: 30px;
+    width: 50px;
     margin: 0 10px 0 10px;
   }
   .shadow {
@@ -406,7 +406,7 @@ export default {
     line-height: 60px;
   }
   .sidebar .nav-list {
-    margin-top: 20px;
+    /* margin-top: 12px; */
     /* margin-bottom: 60px; */
     /* height: 100%; */
     /* min-height: min-content; */
@@ -453,7 +453,7 @@ export default {
     border: none;
     border-radius: 12px;
     transition: all 0.5s ease;
-    background: #F2F4F6;
+    background: #fffbf3;
 ;
   }
   .sidebar.open input {
@@ -470,7 +470,7 @@ export default {
     left: 0;
     transform: translateY(-50%);
     font-size: 22px;
-    background: #F2F4F6;
+    background: #fffbf3;
     color: var(--icons-color);
   }
   .sidebar.open .bx-search:hover {
@@ -540,7 +540,7 @@ export default {
     color: var(--bg-color);
   }
   .selected {
-    background-color: #002147 !important;
+    background-color: #FAAF08 !important;
   }
   .selected_text {
     transition: all 0.5s ease;

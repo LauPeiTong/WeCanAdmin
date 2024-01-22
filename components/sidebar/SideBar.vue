@@ -2,8 +2,8 @@
 sidebar-menu-akahon(
   :menuItems="menus"
   :isUsedVueRouter="true"
-  :menuTitle="'CREDIT PULSE'"
-  :menuLogo="require(`../../assets/img/credit-pulse-logo.png`)"
+  :menuTitle="'WECAN'"
+  :menuLogo="require(`../../assets/img/wecan-logo.png`)"
   :profileImg="require(`../../assets/employee/1.png`)"
   :bgColor="'white'"
   :secondaryColor="$vuetify.theme.themes.light.primary"
@@ -31,10 +31,22 @@ export default {
           icon: 'bx-grid-alt'
         },
         {
-          link: '/borrower',
-          name: 'Customer Insights',
-          tooltip: 'Customer Insights',
-          icon: 'bx-bullseye'
+          link: '/donations',
+          name: 'Donations',
+          tooltip: 'Donations',
+          icon: 'bx-money'
+        },
+        {
+          link: '/sales',
+          name: 'Surplus Food Sales',
+          tooltip: 'Surplus Food Sales',
+          icon: 'bx-line-chart'
+        },
+        {
+          link: '/vendors',
+          name: 'Vendors',
+          tooltip: 'Vendors',
+          icon: 'bx-user-check'
         },
         {
           link: '/',

@@ -1,35 +1,27 @@
 <template lang="pug">
-.dashboard-page.pa-0.ma-0.fill-width
-  upper-title.ma-0(:title="'Dashboard'" :icon="'bell'" :rightIconColor="$vuetify.theme.themes.light.primary")
+.vendor-page.pa-0.ma-0.fill-width
+  upper-title.ma-0(:title="'Vendors'" :icon="'bell'" :rightIconColor="$vuetify.theme.themes.light.primary")
   v-row.ma-0.pt-14.fill-width.px-2
     v-col.pb-6(cols="12")
-      summary-card
+      vendor-summary
     v-col(cols="12")
-      dashboard-list
+      vendor-list-vue
     //- v-col(cols="4")
       v-card.fill-height.shadow.pa-3.pb-6.rounded-lg(elevation="0")
         p.font-weight-medium Number of Approved Loans
         ApexCharts(type="donut" :options="donutChartOptions" :series="series")
-    //- v-col(cols="4")
-      v-card.fill-height.shadow.pa-3.pb-6.rounded-lg(elevation="0")
-        p.font-weight-medium Types of Loans
-        ApexCharts(type="bar" :options="barChartOptions" :series="series2")
-    //- v-col(cols="4")
-      v-card.fill-height.shadow.pa-3.pb-6.rounded-lg(elevation="0")
-        p.font-weight-medium Location of Borrowers
-        ApexCharts(type="pie" :options="pieChartOptions" :series="series1")
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import SummaryCard from '../components/dashboard/SummaryCard.vue'
-import DashboardList from '../components/dashboard/DashboardList.vue'
+import VendorSummary from '../components/vendors/VendorSummary.vue'
+import VendorListVue from '../components/vendors/VendorList.vue'
 
 export default {
-  name: 'DashboardPage',
+  name: 'VendorPage',
   components: {
-    SummaryCard,
-    DashboardList
+    VendorSummary,
+    VendorListVue
   },
   layout: 'default',
   data () {

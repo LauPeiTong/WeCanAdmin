@@ -7,8 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - credit-pulse',
-    title: 'credit-pulse',
+    titleTemplate: '%s - App to achieve zero hunger',
+    title: 'WeCan',
     htmlAttrs: {
       lang: 'en'
     },
@@ -19,7 +19,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/WeCanLogo.png' }
     ]
   },
 
@@ -34,6 +34,7 @@ export default {
     '~/plugins/vuetify.js',
     '~/plugins/currency.js',
     '~/plugins/list.js',
+    '~/plugins/filter.js',
     '~/plugins/avatar.js'
   ],
 
@@ -45,7 +46,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/date-fns'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -57,12 +59,11 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Set your API key here
-    baseURL: '/',
+    baseURL: 'https://peitong.pythonanywhere.com',
     headers: {
       common: {
         'Content-Type': 'application/json',
-        Authorization: ''
-        // For chatgpt service, replace the above Authorization with: Bearer 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
+        Authorization: 'Bearer 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'
       }
     }
   },
